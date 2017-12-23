@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "base64-util",
+    "rsx-files",
+    "rsx-images",
+    "rsx-fonts",
+    "rsx-resource-updates",
+    "rsx-resource-group"
+]

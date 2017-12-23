@@ -1,0 +1,22 @@
+[package]
+name = "rsx-images"
+version = "0.1.0"
+authors = ["Victor Porof <victor.porof@gmail.com>"]
+
+[lib]
+name = "rsx_images"
+
+[features]
+image-dummy-decode = []
+image-rgb-to-bgr = []
+
+[dependencies]
+base64-util = { path = "../base64-util" }
+fnv = "1.0.6"
+image = "0.18.0"
+imageproc = "0.13.0"
+rsx-resource-updates = { path = "../rsx-resource-updates", default-features = false }
+rsx-shared = { git = "https://github.com/victorporof/rsx-shared.git", default-features = false, features = ["impl-external-image"] }
+serde = "1.0.27"
+serde_derive = "1.0.27"
+uuid = { version = "0.5.1", features = ["v4"] }

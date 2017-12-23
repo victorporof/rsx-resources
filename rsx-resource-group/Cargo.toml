@@ -1,0 +1,25 @@
+[package]
+name = "rsx-resources"
+version = "0.1.0"
+authors = ["Victor Porof <victor.porof@gmail.com>"]
+
+[lib]
+name = "rsx_resources"
+
+[features]
+default = ["link-freetype"]
+
+link-freetype = ["rsx-fonts/link-freetype"]
+image-dummy-decode = ["rsx-images/image-dummy-decode"]
+image-rgb-to-bgr = ["rsx-images/image-rgb-to-bgr"]
+pretty-json-mode = ["rsx-resource-updates/pretty-json-mode"]
+
+[dependencies]
+rsx-files = { path = "../rsx-files", default-features = false }
+rsx-fonts = { path = "../rsx-fonts", default-features = false }
+rsx-images = { path = "../rsx-images", default-features = false }
+rsx-resource-updates = { path = "../rsx-resource-updates", default-features = false }
+rsx-shared = { git = "https://github.com/victorporof/rsx-shared.git", default-features = false }
+
+[dev-dependencies]
+base64-util = { path = "../base64-util", default-features = false }

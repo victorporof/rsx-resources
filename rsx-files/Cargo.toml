@@ -1,0 +1,11 @@
+[package]
+name = "rsx-files"
+version = "0.1.0"
+authors = ["Victor Porof <victor.porof@gmail.com>"]
+
+[lib]
+name = "rsx_files"
+
+[dependencies]
+fnv = "1.0.6"
+rsx-shared = { git = "https://github.com/victorporof/rsx-shared.git", default-features = false }

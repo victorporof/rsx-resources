@@ -1,0 +1,17 @@
+[package]
+name = "rsx-resource-updates"
+version = "0.1.0"
+authors = ["Victor Porof <victor.porof@gmail.com>"]
+
+[lib]
+name = "rsx_resource_updates"
+
+[features]
+pretty-json-mode = []
+
+[dependencies]
+base64-util = { path = "../base64-util" }
+rsx-shared = { git = "https://github.com/victorporof/rsx-shared.git", default-features = false }
+serde = { version = "1.0.27", features = ["rc"] }
+serde_derive = "1.0.27"
+serde_json = "1.0.9"
